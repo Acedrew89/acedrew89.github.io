@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <style type="text/css">
+    section {}
+    section:nth-child(2) {}
+    section:nth-child(3) {}
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    .center {
+      float: none;
+      justify-content: center;
+      padding-left: 400px;
+      padding-right: 600px;
+    }
+    .box {
+      margin-left: 1.5em;
+      margin-bottom: 0.5em;
+      padding: 0 10px 0;
+      color: #666;
+      background: #fff;
+      border: 1.5px solid #d2d2d2;
+      border-radius: 3px;
+    }
+    .box h3 {
+      position: relative;
+      display: block;
+      height: 30px;
+      line-height: 1.3em;
+      width: 260px;
+      margin: 0;
+      padding: 5px 10px;
+      left: -15px;
+      top: 8px;
+      color: #fff;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      background: #993333;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      font-size: 1.5em;
+    }
+    .tskli {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .tskh {
+      font-size: 3.5em;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="left">
+      <div class="leftside">
+        <div class="box" style="height: 450px;">
+          <h3>Who Is On Duty</h3>
+          <h1 style="font-size:3em; display:flex; justify-content:center; margin-bottom:0 !important; text-decoration:underline;">Herd</h1>
+          <!--Herd DP-->
+          <p style="font-size:3em; display:flex; justify-content:center; margin:0 !important;">Worthing
+            <br></p>
+          <h1 style="font-size:3em; display:flex; justify-content:center; margin-bottom:0 !important; text-decoration:underline;">Lodge</h1>
+          <!--Lodge DP-->
+          <p style="font-size:3em; display:flex; justify-content:center; margin:0 !important;">Wright</p>
+        </div>
+        <div class="box" style="height:400px;">
+          <h3>Clean-Up Duty</h3>
+          <h1 style="font-size:3em; display:flex; justify-content:center; margin-bottom:0 !important; text-decoration:underline;">Herd</h1>
+          <!--Herd Cleanup-->
+          <p style="font-size:3em; display:flex; justify-content:center; margin:0 !important;">Room 100</p>
+          <h1 style="font-size:3em; display:flex; justify-content:center; margin-bottom:0 !important; text-decoration:underline;">Lodge</h1>
+          <!--Lodge Cleanup-->
+          <p style="font-size:3em; display:flex; justify-content:center; margin:0 !important;">Room 103</p>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <!--Weather Box-->
+      <div class="box" style="width: 500px; height: 250px;">
+        <iframe id="forecast_embed" type="text/html" frameborder="0" height="340px" width="100%" src="http://forecast.io/embed/#lat=45.1833&lon=-69.2271&name=Dover Foxcroft, ME&color=#993333"></iframe>
+      </div>
+      <div class="box">
+        <h3>Duty Phone</h3>
+        <h1 style="font-size:3em; text-decoration:underline; margin-bottom:0;">Herd Duty Phone</h1>
+        <!--Herd Duty Phone-->
+        <p style="font-size:2.5em; margin-top:0;">+1(207)717-9157</p>
+        <h1 style="font-size:3em; text-decoration:underline; margin-bottom:0;">Lodge Duty Phone</h1>
+        <!--Lodge Duty Phone-->
+        <p style="font-size:2.5em; margin-top:0;">+1(207)717-9146</p>
+      </div>
+      <div class="box" style="height:370px;">
+        <h3>Rotation This Week</h3>
+        <div>
+          <div style="float:left;">
+            <ul>
+              <!--Week Rotation Start-->
+              <lh style="font-size:2.5em; text-decoration:underline;">M</lh>
+              <li style="list-style-type:none; font-size:2em">1</li>
+              <li style="list-style-type:none; font-size:2em">2</li>
+              <li style="list-style-type:none; font-size:2em">5</li>
+              <li style="list-style-type:none; font-size:2em">3</li>
+              <li style="list-style-type:none; font-size:2em">4</li>
+              <li style="list-style-type:none; font-size:2em; color:#993333;">A</li>
+            </ul>
+          </div>
+          <div style="float:left">
+            <ul>
+              <lh style="font-size:2.5em; text-decoration:underline;">Tu</lh>
+              <li style="list-style-type:none; font-size:2em">1</li>
+              <li style="list-style-type:none; font-size:2em">2</li>
+              <li style="list-style-type:none; font-size:2em">3</li>
+              <li style="list-style-type:none; font-size:2em">4</li>
+              <li style="list-style-type:none; font-size:2em">5</li>
+              <li style="list-style-type:none; font-size:2em; color:#993333;">B</li>
+            </ul>
+          </div>
+          <div style="float:left">
+            <ul>
+              <lh style="font-size:2.5em; text-decoration:underline;">W</lh>
+              <li style="list-style-type:none; font-size:2em">1</li>
+              <li style="list-style-type:none; font-size:2em">2</li>
+              <li style="list-style-type:none; font-size:2em">4</li>
+              <li style="list-style-type:none; font-size:2em">5</li>
+              <li style="list-style-type:none; font-size:2em">3</li>
+              <li style="list-style-type:none; font-size:2em; color:#993333;">A</li>
+            </ul>
+          </div>
+          <div style="float:left">
+            <ul>
+              <lh style="font-size:2.5em; text-decoration:underline;">Th</lh>
+              <li style="list-style-type:none; font-size:2em">1</li>
+              <li style="list-style-type:none; font-size:2em">2</li>
+              <li style="list-style-type:none; font-size:2em">5</li>
+              <li style="list-style-type:none; font-size:2em">3</li>
+              <li style="list-style-type:none; font-size:2em">4</li>
+              <li style="list-style-type:none; font-size:2em; color:#993333;">B</li>
+            </ul>
+          </div>
+          <div style="float:left">
+            <ul>
+              <lh style="font-size:2.5em; text-decoration:underline;">F</lh>
+              <li style="list-style-type:none; font-size:2em">1</li>
+              <li style="list-style-type:none; font-size:2em">2</li>
+              <li style="list-style-type:none; font-size:2em">3</li>
+              <li style="list-style-type:none; font-size:2em">4</li>
+              <li style="list-style-type:none; font-size:2em">5</li>
+              <li style="list-style-type:none; font-size:2em; color:#993333;">B</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="box" style="display:table-cell;">
+        <h3 style="width:300px;">Things To Know</h3>
+        <!--Things You Should Know Start-->
+        <h1 class="tskh">- Boardingware:</h1>
+        <ul>
+          <li class="tskli">This is not going away! We are using Boardingware for the whole year.</li>
+          <li class="tskli">If you are leaving the dorms you must sign out in Boardingware.</li>
+        </ul>
+        <h1 class="tskh">- Proctored Study Hall:</h1>
+        <ul>
+          <li class="tskli">Yes, we will have Proctored Study Hall this week!</li>
+          <li class="tskli">It will be Wednesday @6:00pm in Room 201.</li>
+        </ul>
+        <h1 class="tskh">- ResLife Grade:</h1>
+        <ul>
+          <li class="tskli">We are in the last quarter of the year!</li>
+          <li class="tskli">Make sure you have proof to show that you are participating in an extracurricular activity.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="box">
+        <h3>Activities Coming Up</h3>
+        <h1 class="tskh">Movie Night @Guthries'</h1>
+        <ul>
+          <li class="tskli">Date: Thursday</li>
+          <li class="tskli">Leave: 6:00pm</li>
+          <li class="tskli">Return: 11:00pm</li>
+          <li class="tskli">Chaperone: Guthries</li>
+        </ul>
+        <h1 class="tskh">Bangor Trip</h1>
+        <ul>
+          <li class="tskli">Date: Friday</li>
+          <li class="tskli">Leave: 12:00pm</li>
+          <li class="tskli">Return: 5:00pm</li>
+          <li class="tskli">Chaperone: Mrs.Tourtelotte</li>
+        </ul>
+        <h1 class="tskh">Stutzman's Sunday Brunch</h1>
+        <ul>
+          <li class="tskli">Date: Sunday</li>
+          <li class="tskli">Leave: 10:00am</li>
+          <li class="tskli">Return: 12:00pm</li>
+          <li class="tskli">Chaperone: Mr.Houston & Ms.Newhouse</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="box">
+        <h3>Community Service Opportunities</h3>
+        <h1 class="tskh">Race To End Domestic Abuse</h1>
+        <ul>
+          <li class="tskli">Organization: Key Club</li>
+          <li class="tskli">Date: Sunday (10/2)</li>
+          <li class="tskli">A white bus will be leaving FA @8:15am if you are interested in participating in this 5k walk!</li>
+        </ul>
+        <h1 class="tskh">Center Theatre Work Hours</h1>
+        <ul>
+          <li class="tskli">Organization: Key Club</li>
+          <li class="tskli">Saturday (10/1) 1:00pm-5:00pm and 6:00pm-9:00pm</li>
+          <li class="tskli">Sunday (10/2) 1:00pm-5:00pm</li>
+        </ul>
+        <h1 class="tskh">Welcome To Our Home</h1>
+        <ul>
+          <li class="tskli">Organization: Key Club</li>
+          <li class="tskli">Date: Saturday (10/8) 6:00am-12:00pm</li>
+          <li class="tskli">Get your permission slips signed by your dorm advisor and passed in to Mr.Rolleston ASAP if you are participating in this event!</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script>
+    var $sections = $('section'),
+      count = 1,
+      speed = 300,
+      delay = 30000;
+    var interval = setInterval(function() {
+      $('html, body').animate({
+        scrollTop: $sections.eq(count).offset().top
+      }, speed);
+      count = (count + 1) % $sections.length;
+    }, delay)
+  </script>
+</body>
+
+</html>
